@@ -22,7 +22,7 @@ export const getUsuario=async(req, res) =>{
 }
 export const createUsuario=async(req, res) =>{
     console.log(req.body);
-
+    const {nombre, apellido, direccion} = req.body
     try {
         const [rows]=await pool.query('INSERT INTO usuarios (nombre,apellido,direccion) VALUES (?,?,?)',[nombre,apellido,direccion])
         console.log(rows);
