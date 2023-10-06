@@ -1,8 +1,7 @@
 import express from 'express';
 import usuariosRoutes from './routes/usuarios.routes.js'
 import productosRoutes from './routes/productos.routes.js'
-import ventasRoutes from './routes/ventas.routes.js'
-
+import ventasRoutes from './routes/ventas.routes.js'; 
 import indexRoutes from './routes/index.routes.js'
 const app=express()
 //const port=3005
